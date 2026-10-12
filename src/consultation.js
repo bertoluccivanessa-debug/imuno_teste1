@@ -116,3 +116,42 @@ export const ATLAS_TERMS=[
  {term:'Dispneia',definition:'Sensação subjetiva de falta de ar.',why:'Pode acompanhar anemia, infecção, asma, insuficiência cardíaca e várias outras condições.'},
  {term:'Febre',definition:'Elevação da temperatura corporal por ajuste do set point hipotalâmico, geralmente em resposta a mediadores inflamatórios.',why:'É um sinal sistêmico frequente, mas não específico de infecção bacteriana.'}
 ];
+
+export const HEMATOPOIESIS_MODULE={
+ intro:'A hematopoiese é o processo contínuo de formação das células do sangue a partir de células-tronco hematopoéticas, principalmente na medula óssea. Em imunologia, ela explica de onde vêm os leucócitos, como amadurecem e em quais tecidos completam sua educação funcional.',
+ concepts:[
+  {title:'Célula-tronco hematopoética (CTH)',summary:'É a célula multipotente capaz de autorrenovação e de originar as linhagens mieloide e linfoide.'},
+  {title:'Nicho medular',summary:'Microambiente da medula óssea formado por células estromais, matriz extracelular, vasos e citocinas que regulam proliferação, manutenção e diferenciação.'},
+  {title:'Citocinas hematopoéticas',summary:'Moléculas como IL-3, GM-CSF, G-CSF, M-CSF, IL-7 e eritropoietina modulam sobrevivência, expansão e compromisso de linhagem.'},
+  {title:'Compromisso de linhagem',summary:'A partir da CTH, progenitores tornam-se progressivamente mais restritos e passam a gerar subconjuntos celulares específicos.'},
+  {title:'Mielopoiese',summary:'Geração de granulócitos, monócitos/macrófagos, parte das células dendríticas, além de outras células sanguíneas não linfóides.'},
+  {title:'Linfopoiese',summary:'Formação de linfócitos B, T e NK a partir do progenitor linfoide comum, com etapas de maturação em tecidos primários e periféricos.'}
+ ],
+ stages:[
+  {phase:'1. Origem',detail:'CTH na medula óssea mantém o sistema por autorrenovação e diferenciação.'},
+  {phase:'2. Progenitores',detail:'A diferenciação gera progenitores mieloides e linfoides, com perda progressiva de pluripotência.'},
+  {phase:'3. Maturação',detail:'Células imaturas passam por expansão, rearranjos gênicos e seleção, dependendo da linhagem.'},
+  {phase:'4. Saída e recirculação',detail:'Leucócitos maduros deixam a medula, circulam no sangue e migram para tecidos ou órgãos linfoides.'},
+  {phase:'5. Ativação periférica',detail:'Nos órgãos linfoides secundários, antígenos, APCs e citocinas orientam resposta efetora e memória.'}
+ ],
+ primaryOrgans:[
+  {title:'Medula óssea',summary:'Principal sítio de hematopoiese no adulto. Também é local de maturação dos linfócitos B e residência de plasmócitos de longa vida.'},
+  {title:'Timo',summary:'Órgão linfoide primário onde linfócitos T amadurecem, passam por seleção positiva e negativa e adquirem tolerância central.'}
+ ],
+ secondaryOrgans:[
+  {title:'Linfonodos',summary:'Filtram a linfa, concentram APCs e linfócitos e favorecem o encontro entre antígenos drenados e células adaptativas.'},
+  {title:'Baço',summary:'Filtra o sangue, remove células envelhecidas e organiza resposta imune contra antígenos circulantes.'},
+  {title:'MALT / tonsilas / placas de Peyer',summary:'Tecido linfoide associado a mucosas, importante para vigilância de superfícies expostas e para respostas com participação de IgA.'}
+ ],
+ lymphFlow:[
+  {title:'Linfa',summary:'Fluido intersticial drenado por vasos linfáticos. Carrega antígenos, citocinas, células dendríticas e linfócitos.'},
+  {title:'Vasos linfáticos',summary:'Conduzem a linfa dos tecidos para linfonodos e, posteriormente, de volta à circulação sanguínea.'},
+  {title:'Recirculação linfocitária',summary:'Linfócitos trafegam entre sangue, linfa e órgãos linfoides, o que amplia a vigilância imunológica.'}
+ ],
+ clinicalLinks:[
+  {title:'Leucopenia, neutropenia e pancitopenia',summary:'Podem refletir falha medular, consumo periférico, toxicidade medicamentosa ou infiltração da medula.'},
+  {title:'Timopoiese e imunodeficiência',summary:'Alterações do timo podem comprometer maturação de linfócitos T e favorecer infecções recorrentes.'},
+  {title:'Esplenectomia e resposta imune',summary:'A ausência de baço reduz a depuração de partículas e aumenta vulnerabilidade a certos patógenos encapsulados.'},
+  {title:'Linfonodo reacional',summary:'Expansão linfonodal costuma refletir ativação imune local ou sistêmica e deve ser interpretada com contexto clínico.'}
+ ]
+};
